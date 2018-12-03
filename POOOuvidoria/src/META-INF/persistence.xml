@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+  <persistence-unit name="POOOuvidoriaPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>pooouvidoria.Funcionarios</class>
+    <class>pooouvidoria.Reclamacoes</class>
+    <class>pooouvidoria.Respostas</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/POOOuvidoria"/>
+      <property name="javax.persistence.jdbc.user" value="Ouvidoria"/>
+      <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
+      <property name="javax.persistence.jdbc.password" value="Ouvidoria"/>
+    </properties>
+  </persistence-unit>
+  <persistence-unit name="POOOuvidoria2PU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>pooouvidoria.Reclamacoes</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/POOOuvidoria2"/>
+      <property name="javax.persistence.jdbc.user" value="Buribyte"/>
+      <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
+      <property name="javax.persistence.jdbc.password" value="Buribyte"/>
+    </properties>
+  </persistence-unit>
+</persistence>
